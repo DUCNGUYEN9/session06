@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  margin: 0 auto;
+  width: 1000px;
+}
+.header {
+  width: 1000px;
+  background-color: rgb(216, 215, 215);
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+}
+.fa-facebook {
+  font-size: 30px;
+  color: rgb(17, 75, 191);
+}
+.header img,
+.center-content .message div img,
+.center-content .info div img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.content {
+  display: flex;
+  flex-direction: row;
+}
+.nav-sidebar {
+  width: 200px;
+  height: 100vh;
+  margin-top: 50px;
+  position: fixed;
+}
+ul:nth-child(1) {
+  margin-top: 100px;
+}
+h3,
+.headeer p {
+  margin-left: 30px;
+}
+ul {
+  list-style: none;
+  line-height: 30px;
+  margin-left: 30px;
+}
+.center-content {
+  background-color: rgb(237, 237, 227);
+  width: 500px;
+  margin-left: 200px;
+}
+.center-content .message {
+  margin: 100px 30px 40px 30px;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 440px;
+  height: 100px;
+  padding: 10px;
+}
+.message ul {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.center-content .info {
+  border: 1px solid black;
+  width: 440px;
+  height: 250px;
+  border-radius: 5px;
+  padding: 10px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+.info div,
+.message div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.info p {
+  margin: 20px;
+}
+.info > img {
+  width: 100px;
+}
+.info-sidebar {
+  width: 300px;
+}
+
+.info-sidebar img {
+  width: 80px;
+}
+.info-sidebar div:nth-child(1) {
+  margin-top: 150px;
+  margin-bottom: 20px;
+}
+.info-sidebar div,
+.info-sidebar div:nth-child(1) {
+  margin-left: 10px;
+  border: 1px solid black;
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+}
