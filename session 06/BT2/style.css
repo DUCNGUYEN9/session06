@@ -103,7 +103,7 @@ ul {
 }
 .info-sidebar div,
 .info-sidebar div:nth-child(1) {
-  margin-left: 10px;
+  margin-left: 50px;
   border: 1px solid black;
   width: 200px;
   height: 200px;
