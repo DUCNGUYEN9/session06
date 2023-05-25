@@ -7,21 +7,50 @@
   margin: 0 auto;
   width: 1000px;
 }
-.header {
+header {
   width: 1000px;
+  height: 50px;
   background-color: rgb(216, 215, 215);
   position: fixed;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+.header-logo {
+  display: flex;
+  justify-content: center;
   align-items: center;
-  padding: 10px;
+  gap: 10px;
+  margin-left: 30px;
+}
+input[type="search"],
+.header-logo button {
+  border-radius: 10px;
+  border: none;
+  padding: 5px;
+}
+.header-logo button {
+  background-color: transparent;
+  margin-left: -35px;
+  cursor: pointer;
+}
+
+.header-avatar,
+.header-avatar div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 50px;
+  gap: 20px;
+}
+.header-avatar i,
+.nav-sidebar i {
+  color: #6561ce;
 }
 .fa-facebook {
   font-size: 30px;
-  color: rgb(17, 75, 191);
+  color: #114bbf;
 }
-.header img,
+header img,
 .center-content .message div img,
 .center-content .info div img {
   width: 40px;
@@ -33,17 +62,19 @@
   flex-direction: row;
 }
 .nav-sidebar {
+  background-color: #f1f1f1;
   width: 200px;
   height: 100vh;
   margin-top: 50px;
   position: fixed;
 }
 ul:nth-child(1) {
-  margin-top: 100px;
+  margin-top: 60px;
 }
-h3,
-.headeer p {
-  margin-left: 30px;
+.nav-sidebar h3 {
+  margin-left: 20px;
+  margin-top: 50px;
+  font-size: 25px;
 }
 ul {
   list-style: none;
@@ -51,14 +82,14 @@ ul {
   margin-left: 30px;
 }
 .center-content {
-  background-color: rgb(237, 237, 227);
+  background-color: white;
   width: 500px;
   margin-left: 200px;
 }
 .center-content .message {
+  background-color: #f9f5f4;
   margin: 100px 30px 40px 30px;
-  border: 1px solid black;
-  border-radius: 5px;
+  border-radius: 10px;
   width: 440px;
   height: 100px;
   padding: 10px;
@@ -69,10 +100,11 @@ ul {
   margin-top: 20px;
 }
 .center-content .info {
-  border: 1px solid black;
+  background-color: #f9f5f4;
+
   width: 440px;
   height: 250px;
-  border-radius: 5px;
+  border-radius: 10px;
   padding: 10px;
   margin-left: 30px;
   margin-bottom: 20px;
@@ -83,6 +115,7 @@ ul {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+  gap: 5px;
 }
 .info p {
   margin: 20px;
@@ -91,7 +124,9 @@ ul {
   width: 100px;
 }
 .info-sidebar {
+  background-color: rgb(252, 255, 255);
   width: 300px;
+  height: 100vh;
 }
 
 .info-sidebar img {
@@ -99,12 +134,13 @@ ul {
 }
 .info-sidebar div:nth-child(1) {
   margin-top: 150px;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
 }
 .info-sidebar div,
 .info-sidebar div:nth-child(1) {
+  background-color: #effbed;
+  border-radius: 10px;
   margin-left: 50px;
-  border: 1px solid black;
   width: 200px;
   height: 200px;
   padding: 10px;
